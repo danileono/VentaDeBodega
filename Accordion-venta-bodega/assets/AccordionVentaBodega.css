@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap')
+
+
+
+ html {
+  font-size: 62.5%;
+  font-family: ubuntu;
+}
+
+
+/* Accordion Styles */
+.accordion-item-vdb {
+  border-bottom: 1px solid #20c997;
+  padding: 0.5% 0%;
+  
+}
+
+.accordion button[aria-expanded='true'] {
+  border-bottom: 1px solid var(--bs-teal);
+  /* background-color: #00d8791c; */
+}
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: var(--bs-gray-dark);
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: var(--bs-teal);
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: var(--bs-teal);
+  border: 1px solid var(--bs-teal);
+}
+
+
+.accordion .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  /* color: #00d879; */
+}
+
+.accordion .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 1px;
+  width: 19px;
+  height: 5px;
+  background: currentColor;
+}
+
+.accordion .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 1px;
+  left: 8px;
+  width: 5px;
+  height: 22px;
+  background: currentColor;
+}
+
+.accordion button[aria-expanded='true'] {
+  color: var(--bs-teal);
+}
+
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 0.5;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+
+.accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}
+
+
+
+
+/*  ESTILOS PCF */
+
+html {
+  font-size: 62.5%;
+  font-family: ubuntu;
+}
+
+.pcf-text-black {
+  color: var(--black);
+}
+
+.pcf-text-regular {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.pcf-text-medium {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.pcf-title-medium {
+  font-size: 4.5rem !important;
+  margin: 15px 0 !important;
+}
+
+
+  .pcf-title-small {
+    font-size: 2.8rem !important;
+  }
+
+
+.landing {
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+
+.container-fluid{
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.pcf-faq {
+  font-family: "Signika", Ubuntu-Bold, sans-serif;
+  font-size: 1.5em !important;
+  line-height: 1.6em !important;
+  font-weight: 300 !important;
+}
+
+
+.link-pcf {
+  color: #00d879 !important;
+  margin: 0 5px 0 0;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+
+
+
+
+
